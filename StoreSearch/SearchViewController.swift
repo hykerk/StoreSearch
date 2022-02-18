@@ -34,6 +34,9 @@ extension SearchViewController: UISearchBarDelegate {
         }
         tableView.reloadData()
     }
+    func position(for bar: UIBarPositioning) -> UIBarPosition {
+        return .topAttached
+    }
 }
 //MARK:  - Table View Delegate
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
