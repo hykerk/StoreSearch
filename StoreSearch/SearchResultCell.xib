@@ -15,25 +15,36 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kDB-84-TYp">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kDB-84-TYp">
                         <rect key="frame" x="16" y="10" width="60" height="60"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="bLQ-H2-Ng1"/>
+                            <constraint firstAttribute="width" constant="60" id="djI-i3-O2L"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvs-f5-jp1">
-                        <rect key="frame" x="84" y="16" width="275" height="22"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvs-f5-jp1">
+                        <rect key="frame" x="84" y="16" width="275" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artist Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRH-cL-CVa">
-                        <rect key="frame" x="84" y="44" width="275" height="18"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRH-cL-CVa">
+                        <rect key="frame" x="84" y="42" width="275" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Mvs-f5-jp1" secondAttribute="trailing" constant="16" id="GZg-1m-5YH"/>
+                    <constraint firstItem="kDB-84-TYp" firstAttribute="leading" secondItem="YZW-IU-SDw" secondAttribute="leading" constant="16" id="Ttf-vX-ObY"/>
+                    <constraint firstAttribute="trailing" secondItem="QRH-cL-CVa" secondAttribute="trailing" constant="16" id="Y8I-rL-nCg"/>
+                    <constraint firstItem="Mvs-f5-jp1" firstAttribute="top" secondItem="YZW-IU-SDw" secondAttribute="top" constant="16" id="gHk-Pt-DtM"/>
+                    <constraint firstItem="QRH-cL-CVa" firstAttribute="top" secondItem="Mvs-f5-jp1" secondAttribute="bottom" constant="8" id="hbp-39-QPX"/>
+                    <constraint firstItem="QRH-cL-CVa" firstAttribute="leading" secondItem="kDB-84-TYp" secondAttribute="trailing" constant="8" id="ndz-hr-KmP"/>
+                    <constraint firstItem="kDB-84-TYp" firstAttribute="top" secondItem="YZW-IU-SDw" secondAttribute="top" constant="10" id="udb-CP-Vbs"/>
+                    <constraint firstItem="Mvs-f5-jp1" firstAttribute="leading" secondItem="kDB-84-TYp" secondAttribute="trailing" constant="8" id="xkG-lY-Hse"/>
+                </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="300" y="51.27436281859071"/>
         </tableViewCell>
