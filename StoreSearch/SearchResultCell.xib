@@ -53,7 +53,7 @@
             <connections>
                 <outlet property="artistNameLabel" destination="QRH-cL-CVa" id="qLj-2B-KsY"/>
                 <outlet property="artworkImageView" destination="kDB-84-TYp" id="VB1-ln-2lE"/>
-                <outlet property="nameLabl" destination="Mvs-f5-jp1" id="prz-WZ-kyi"/>
+                <outlet property="nameLabel" destination="Mvs-f5-jp1" id="d2L-MX-IW5"/>
             </connections>
             <point key="canvasLocation" x="300" y="51.27436281859071"/>
         </tableViewCell>
