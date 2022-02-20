@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19138AF227C1FD0E0079126A /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19138AF127C1FD0E0079126A /* NothingFoundCell.xib */; };
 		198F874E27C020FF0040F105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198F874D27C020FF0040F105 /* AppDelegate.swift */; };
 		198F875027C020FF0040F105 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198F874F27C020FF0040F105 /* SceneDelegate.swift */; };
 		198F875227C020FF0040F105 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198F875127C020FF0040F105 /* SearchViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19138AF127C1FD0E0079126A /* NothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		198F874A27C020FF0040F105 /* StoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		198F874D27C020FF0040F105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		198F874F27C020FF0040F105 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				198F876127C03D020040F105 /* SearchResult.swift */,
 				198F876327C06C0F0040F105 /* SearchResultCell.xib */,
 				198F876527C0B3840040F105 /* SearchResultCell.swift */,
+				19138AF127C1FD0E0079126A /* NothingFoundCell.xib */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 				198F875A27C021020040F105 /* LaunchScreen.storyboard in Resources */,
 				198F875727C021020040F105 /* Assets.xcassets in Resources */,
 				198F876427C06C0F0040F105 /* SearchResultCell.xib in Resources */,
+				19138AF227C1FD0E0079126A /* NothingFoundCell.xib in Resources */,
 				198F875527C020FF0040F105 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
