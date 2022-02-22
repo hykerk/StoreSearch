@@ -23,4 +23,10 @@ class SearchResult: Codable, CustomStringConvertible {
         return "\nResult - Kind:   \(kind ?? "None"), Name: \(name), Artist Name: \(artistName ?? "None")"
     }
     var kind: String? = ""
+    var trackPrice: Double? = 0.0
+    var currency = ""
+    var artworkUrl60 = ""
+    var artworkUrl100 = ""
+    var trackViewUrl: String? = ""
+    var primaryGenreName = ""
 }
