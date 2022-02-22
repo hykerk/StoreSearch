@@ -20,6 +20,7 @@ class SearchResult: Codable, CustomStringConvertible {
         return trackName ?? ""
     }
     var description: String {
-        return "\nResult - Name: \(name), Artist Name: \(artistName ?? "None")"
+        return "\nResult - Kind:   \(kind ?? "None"), Name: \(name), Artist Name: \(artistName ?? "None")"
     }
+    var kind: String? = ""
 }
