@@ -44,6 +44,7 @@ class SearchViewController: UIViewController {
             return try Data(contentsOf: url)
         } catch {
             print("Download Error: \(error.localizedDescription)")
+            showNetworkError()
             return nil
         }
     }
@@ -57,16 +58,22 @@ class SearchViewController: UIViewController {
             return []
         }
     }
+    func showNetworkError() {
+        let alert = UIAlertController(title:  "Whoops...", message: "There was an error accessing the iTunes Store." + " Please try again.", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
 }
 //MARK: - Search Bar Delegate
 extension SearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.resignFirstResponder()
-        searchResults = []
-        if searchBar.text!.isEmpty {
+        if !searchBar.text!.isEmpty {
             searchBar.resignFirstResponder()
+            
             hasSearched = true
             searchResults = []
+            
             let url = iTunesURL(searchText: searchBar.text!)
             print("URL: '\(url)'")
             if let data = performStoreRequest(with: url) {
@@ -79,6 +86,7 @@ extension SearchViewController: UISearchBarDelegate {
     func position(for bar: UIBarPositioning) -> UIBarPosition {
         return .topAttached
     }
+
 }
 //MARK:  - Table View Delegate
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
