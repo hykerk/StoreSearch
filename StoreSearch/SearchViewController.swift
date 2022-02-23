@@ -83,8 +83,9 @@ extension SearchViewController: UISearchBarDelegate {
             searchResults = []
             
             let queue = DispatchQueue.global()
-            let url = self.iTunesURL(searchText: searchBar.text!)
+            
             queue.async {
+                let url = self.iTunesURL(searchText: searchBar.text!)
                 if let data = self.performStoreRequest(with: url) {
                     self.searchResults = self.parse(data: data)
                     self.searchResults.sort(by: <)
