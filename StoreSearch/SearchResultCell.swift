@@ -37,4 +37,9 @@ class SearchResultCell: UITableViewCell {
             downloadTask = artworkImageView.loadImage(url: smallURL)
         }
     }
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        downloadTask?.cancel()
+        downloadTask = nil
+    }
 }
