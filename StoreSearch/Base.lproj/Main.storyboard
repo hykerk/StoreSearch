@@ -33,6 +33,24 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="z3f-e0-WD5"/>
                                 </connections>
                             </searchBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="U0y-WY-gUM">
+                                <rect key="frame" x="0.0" y="51" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" id="XOn-8l-WKd">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="je8-dW-fG2">
+                                            <rect key="frame" x="16" y="5.5" width="343" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="All"/>
+                                                <segment title="Music"/>
+                                                <segment title="Software"/>
+                                                <segment title="E-Books"/>
+                                            </segments>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -40,6 +58,8 @@
                             <constraint firstItem="LX8-MN-mka" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6Ba-Mg-53z"/>
                             <constraint firstItem="UJq-8n-piA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Bhj-qZ-yb8"/>
                             <constraint firstItem="UJq-8n-piA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y69-fA-7cg"/>
+                            <constraint firstItem="U0y-WY-gUM" firstAttribute="top" secondItem="LX8-MN-mka" secondAttribute="bottom" id="dwf-pB-mmp"/>
+                            <constraint firstItem="U0y-WY-gUM" firstAttribute="top" secondItem="LX8-MN-mka" secondAttribute="bottom" id="izH-Nh-Qg1"/>
                             <constraint firstItem="LX8-MN-mka" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kCD-oW-vZt"/>
                             <constraint firstItem="UJq-8n-piA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mj4-5k-mYl"/>
                             <constraint firstItem="UJq-8n-piA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rAI-l5-6ZO"/>
