@@ -88,7 +88,10 @@ extension SearchViewController: UISearchBarDelegate {
                 if let data = self.performStoreRequest(with: url) {
                     self.searchResults = self.parse(data: data)
                     self.searchResults.sort(by: <)
-                    print("DONE!")
+                    DispatchQueue.main.async{
+                        self.isLoading  = false
+                        self.tableView.reloadData()
+                    }
                     return
                 }
             }
